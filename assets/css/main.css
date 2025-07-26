@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 
 @media screen {
@@ -12,15 +9,11 @@ PAGE SETUP
   display:none;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.4em;
-  background-color: #fefefe;
-  font-size: 15px;
-  width:100%;
+body {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 18px;
+    background: #f6f8fa;
+    color: #24292f;
 }
 
 
@@ -111,18 +104,12 @@ blockquote {
 }
 
 a {
-  color: #005999;
-  font-weight:bold;
-  border-bottom: 2px dotted #87a7be;
-}
-
-a:visited {
- color: #44136c;
- border-bottom: 2px dotted #956cb7;
+    color: #0366d6;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration:none;
+    text-decoration: underline;
 }
 
 
@@ -428,3 +415,54 @@ figure.img-right-col {
 }
 
 }
+
+.sidebar {
+    background: #fff;
+    color: #24292f;
+    border-right: 1px solid #e1e4e8;
+}
+
+.sidebar-brand {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0366d6;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.sidebar-section > span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5rem 1rem 0.5rem 1.5rem;
+    display: block;
+    color: #24292f;
+}
+
+.sidebar-subnav {
+    font-size: 0.95em;
+    padding-left: 2em;
+}
+
+.sidebar-subnav a {
+    color: #24292f;
+    display: block;
+    padding: 0.3rem 0;
+    font-weight: 400;
+}
+
+.sidebar-subnav a:hover {
+    color: #0366d6;
+    background: #eaf5ff;
+}
+
+.main-content {
+    background: #fff;
+    padding: 2rem 3rem;
+    min-height: 100vh;
+    color: #24292f;
+}
+
+
