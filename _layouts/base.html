@@ -27,9 +27,12 @@
     {% endif %}
 
 
-    <div class="container">
+  <div class="layout">
+      {% include nav.html %}
+    <div class="main-content">
       {{ content }}
-    </div> <!-- /main -->
+    </div>
+  </div>
 
 
     {% if jekyll.environment == 'production' and site.analytics_id %}{% include google_analytics.html %}{% endif %}
