@@ -49,6 +49,20 @@
   color: #007bff;
 }
 
+.sidebar-subnav {
+  font-size: 0.9em;
+  padding-left: 1em;
+}
+.sidebar-subnav li {
+  margin-bottom: 0.5em;
+}
+.sidebar-section > span {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+
 /* Main Content Styles */
 .main-content {
   flex: 1;
