@@ -295,3 +295,13 @@ CARDS (DIRECTORY)
     color: #0366d6;
     text-decoration:
 
+
+
+
+
+.sidebar ul,
+.sidebar li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
