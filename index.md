@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Course Showcase
 layout: base
 date: 2024-12-02
 ---
