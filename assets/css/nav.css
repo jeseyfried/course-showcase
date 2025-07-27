@@ -140,7 +140,7 @@
 /* Optional: subtle divider between sections */
 .navbar-section:not(:last-child),
 .sidebar-section:not(:last-child) {
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 0px solid #e1e4e8;
 }
 
 /* Optional: scroll if sidebar is tall */
