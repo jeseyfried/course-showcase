@@ -29,12 +29,12 @@
 /* Brand/logo at top */
 .navbar-brand, .sidebar-brand {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #800000;
     padding: 1rem 1.5rem;
     display: block;
     text-decoration: none;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: none;
     background: #fff;
 }
 
