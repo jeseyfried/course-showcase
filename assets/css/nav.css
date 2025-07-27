@@ -28,7 +28,7 @@
 
 /* Brand/logo at top */
 .navbar-brand, .sidebar-brand {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-weight: 900 !important;
     color: #800000;
     padding: 1rem 1.5rem;
