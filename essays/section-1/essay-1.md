@@ -8,4 +8,4 @@ This is the content for Essay 1 in Section 1.
 
 by Sample Student
 
-<iframe src="essays/all-student-essays/chicago-sample-paper.pdf" width="1000" height="600"></iframe>
+<iframe src="/essays/all-student-essays/chicago-sample-paper.pdf" width="1000" height="600"></iframe>
