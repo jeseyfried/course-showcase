@@ -8,3 +8,8 @@ defaults:
       path: "essays"
     values:
       layout: "base"
+
+collections:
+  essays:
+    output: true
+    permalink: /essays/:path/
