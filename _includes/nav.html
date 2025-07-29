@@ -1,20 +1,23 @@
-{% for section in site.data.nav-sections.sections %}
-
-{% if {{section.display}} != 'none'}} %}
-<h2 class="navigation-section">{{section.display}}</h2>
-{% endif %}
-
-{% assign pages = site.pages | sort: 'order' %}
-
-<ul>
-  {% for item in pages %}
-    {% if item.toc-section == section.name %}
-      <li class="navigation-list-item {% if item.url == page.url %}active{% endif %}">
-        <a href="{{site.baseurl}}{{item.url}}">{{ item.title }}</a>
+<nav class="sidebar-nav">
+  <ul>
+    {% assign sorted_essays = site.essays | sort: "title" %}
+    {% for essay in sorted_essays %}
+      <li>
+        <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
+        {%- if page.url == essay.url -%}
+        <ul>
+          {%- for heading in essay.content | split: "<h" -%}
+            {%- if heading contains '</h2>' -%}
+              {%- assign text = heading | split: ">" | last | split: "</h2>" | first -%}
+              <li>
+                <a href="#{{ text | slugify }}">{{ text }}</a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+        {%- endif -%}
       </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</nav>
 
-
-{% endfor %}
