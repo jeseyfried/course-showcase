@@ -1,4 +1,10 @@
 <nav class="sidebar-nav">
+  <!-- Brand section: add this block -->
+  <div class="sidebar-brand" style="padding:1em; font-weight:bold; font-size:1.2em;">
+    <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:inherit;">
+      {{ site.title }}
+    </a>
+  </div>
   <ul>
     {% assign sorted_essays = site.essays | sort: "title" %}
     {% for essay in sorted_essays %}
@@ -20,4 +26,3 @@
     {% endfor %}
   </ul>
 </nav>
-
